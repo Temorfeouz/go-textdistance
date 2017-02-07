@@ -70,7 +70,7 @@ func JaroDistance(s1, s2 string) (float64, int) {
 	prefix := 0
 	longerArray := strings.Split(longer, "")
 	shorterArray := strings.Split(shorter, "")
-	for i := 0; i < len(shorter); i++ {
+	for i := 0; i < len(shorterArray); i++ {
 		if longerArray[i] == shorterArray[i] {
 			prefix++
 		} else {
